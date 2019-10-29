@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/englishnews"
+    tools:context="zaman.example.com.finalproject.englishProfile">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Head Lines"
+        android:background="#9aff9c"
+        android:textColor="#0180ff"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        />
+
+    <TextView
+        android:id="@+id/enews1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#aac0d6"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/enews2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enews1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="#aac0d6"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/enews3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enews2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="#aac0d6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/enews4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enews3"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:background="#aac0d6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:layout_marginTop="310dp"
+        android:background="#b2fcb4"
+        android:text="Watch Video"
+        android:textColor="#ff0101"
+        android:textSize="30sp"
+        android:textStyle="italic|bold" />
+
+    <ImageButton
+        android:id="@+id/eimageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/unnamed"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="220dp"
+
+
+         />
+
+    <ImageButton
+        android:id="@+id/eimageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@drawable/unnamed" />
+
+
+    <com.google.android.gms.ads.AdView
+
+
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

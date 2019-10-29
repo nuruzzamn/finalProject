@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/newspaperbangla"
+    tools:context="zaman.example.com.finalproject.DashboardActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Head Lines"
+        android:background="#9aff9c"
+        android:textColor="#0180ff"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        />
+
+    <TextView
+        android:id="@+id/bnews1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="#aac0d6"
+        android:text="The Daily Prothom Alo"
+        android:textStyle="italic|bold"
+        android:textColor="#0a0a0a"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/bnews2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bnews1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="The Daily Ittefaq "
+        android:textStyle="italic|bold"
+        android:textColor="#0a0a0a"
+        android:background="#aac0d6"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/bnews3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bnews2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Bangladesh Protidin"
+        android:textStyle="italic|bold"
+        android:textColor="#0a0a0a"
+        android:gravity="center"
+        android:background="#aac0d6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bnews4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bnews3"
+        android:layout_marginTop="17dp"
+        android:text="Bangladesh Protidin"
+        android:textStyle="italic|bold"
+        android:textColor="#0a0a0a"
+        android:gravity="center"
+        android:background="#aac0d6"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Watch Video"
+        android:background="#f5c189"
+        android:textColor="#ff0000"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"/>
+
+    <ImageButton
+        android:id="@+id/bimageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="220dp"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/unnamed" />
+
+    <ImageButton
+        android:id="@+id/bimageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/unnamed" />
+
+
+
+    <com.google.android.gms.ads.AdView
+
+
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+</RelativeLayout>
